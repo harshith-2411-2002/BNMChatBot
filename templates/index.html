@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BNMIT Chat Bot</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Medical Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="background-image"></div>
     <div class="container">
-        <div class="header">
-            <img src="../static/bnm_logo.png" class="logo">
-            <h1>BNMIT Conversational Helpline Bot</h1>
-        </div>
+        <h1>B N M I T ChatBot</h1>
         <div class="chat-box" id="chat-box"></div>
-        <div class="user-input">
-            <input type="text" id="user-input" placeholder="Type your query here...">
-            <img src="../static/send_button.jpg" onclick="sendMessage()" class="send_button" style="cursor: pointer;">
-        </div>
+        <input type="text" id="user-input" placeholder="Type your query here...">
+        <button onclick="sendMessage()">Send</button>
     </div>
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
